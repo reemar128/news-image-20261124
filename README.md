@@ -4,10 +4,10 @@
 
 # Tuesday 24 November 2026 — the world in one day, 40 stories
 
-A program that draws one newspaper front page summing up Tuesday
-24 November 2026 in a single image: 40 verified stories across
-7 regions, a numbers strip, and a date check. Built for the make.fun
-bounty [news-image-20261124](https://make.fun/bounty/news-image-20261124).
+A newspaper front page summing up Tuesday 24 November 2026 in one image:
+40 verified stories across 7 regions, with a numbers strip, seven featured
+stories with full decks, a drawn world map marking where the top stories
+happened, a UTC timeline of when the news broke, and a DATE CHECK box.
 
 ## How to run
 
@@ -16,73 +16,49 @@ python3 build_image.py   # writes entry.png (1024x1024, deterministic)
 python3 main.py          # copies entry.png to $MAKEFUN_OUTPUT_DIR/entry.png
 ```
 
-Requirements: Python 3 with Pillow installed (`pip install pillow`).
-`main.py` itself uses only the standard library.
+Requires Python 3 with Pillow for `build_image.py`; `main.py` uses only
+the standard library.
 
 ## The 40 stories
 
-All forty were verified as Tuesday 24 November 2026 events. Stories
-from Monday 23 November or earlier were checked and left out.
+**Top of the day (1–7):** Asian markets rally (Taiex +9.1%, Kospi +7.5%,
+Nikkei +4.5%); Russian strike hits Zaporizhzhia (2 killed, 22 wounded);
+Shenzhou-24 crew named, incl. Pakistan's first astronaut to Tiangong;
+Nepal quake M5.3 in Taplejung; Russian jets enter Korea's air defence
+zone near Ulleung; UN agrees two years of talks on lethal autonomous
+weapons; drones hit homes and a UN building in Khartoum.
 
-### Top stories
-1. Asian markets rally as chips rebound — Taiex +9.1%, Kospi +7.5%, Nikkei +4.5%
-2. Zaporizhzhia attack kills 2, wounds 22 incl. 2 children
-3. Shenzhou-24 crew named — Tang Hongbo, Wu Yi, and Pakistan's Muhammad Zeeshan Ali, the first foreign astronaut to visit Tiangong
-4. Nepal quake M5.3/5.6 in Taplejung, Koshi; no casualties
-5. Russian jets enter Korea's air defence zone near Ulleung; jets scrambled, shelter alert 07:52–07:57; no airspace violation
-6. UN agrees 2 years of talks on lethal autonomous weapons
+**Asia-Pacific (8–17):** Japan factory PMI flash 53.7; Singapore Q3 GDP
++6.1%; PBOC yuan reference 6.6757; ANZ pulls RBA rate-cut call to Jun
+2027; India shut for Guru Nanak Jayanti, oil bill +60%; India SC bails
+Godhra convict (medical); SpiceJet crisis; Afghanistan drought deepens;
+Myanmar govt criticises ASEAN; China and Swiss envoys talk Korea in
+Nanjing.
 
-### Asia-Pacific
-7. Japan factory PMI flash 53.7
-8. Singapore Q3 GDP +6.1%; forecast lifted to ~6%
-9. PBOC sets yuan reference at 6.6757 per dollar
-10. ANZ pulls RBA rate-cut call forward to June 2027
-11. India shut for Guru Nanak Jayanti; oil import bill +~60%
-12. India top court bails Godhra convict on medical grounds
-13. SpiceJet in crisis; pilots' union seeks help
-14. Afghanistan drought deepens, millions in despair
-15. Myanmar's military-backed government criticises ASEAN
-16. China, Swiss envoys discuss Korea in Nanjing
+**Europe (18–30):** German Ifo 90.6, best in 3+ years; Hungary's Magyar
+to meet Zelenskyy; Belgium PM meets king, no budget deal; Belgium
+publishes 22nd Russia sanctions package; thousands protest living costs
+in Lisbon; 12,000 evacuated at Manchester concert; UK destitution hits
+record 3.8m (JRF); Ferrari unveils 296 Challenge in Spain; Ukraine MP
+Labaziuk jailed 7 years; two diplomats expelled over Russia links;
+Moscow tows drone-hit vessel off Finland; Albania denies role in Libya
+ship strike; Ukraine shares clips of ship strikes.
 
-### Europe
-17. German Ifo business climate 90.6, highest in over 3 years
-18. Hungary PM Magyar to meet Zelenskyy in western Ukraine
-19. Belgium PM meets king again; no budget deal
-20. Belgium publishes 22nd Russia sanctions package
-21. Thousands protest living costs in Lisbon
-22. ~12,000 evacuated at Don Toliver concert in Manchester
-23. UK destitution hits record 3.8m people (JRF report, released Tue)
-24. Ferrari unveils 296 Challenge Stradale and Evo in Spain
-25. Ukrainian MP Labaziuk jailed 7 years for corruption
-26. Two diplomats expelled over Russian intel links
-27. Moscow tows drone-hit vessel off Finland
-28. Albania denies role in Libya ship strike
-29. Ukraine shares clips of strikes on Russian ships off Libya
+**Middle East (31–34):** UAE bus-truck crash kills 11; Israel strike
+kills at least 3 in Gaza; Iraqi PM makes first visit to Egypt; Turkey
+and Egypt talk economy and Libya.
 
-### Middle East
-30. UAE bus–truck crash kills 11 in Ras Al Khaimah
-31. Israel strike kills at least 3 in southern Gaza
-32. Iraqi PM makes first official visit to Egypt
-33. Turkey, Egypt talk economy and Libya de-escalation
+**North America (35–38):** NBA — Blazers end 76ers' streak; Trump halts
+Army lead explosives in Iowa; Mamdani opens 440,000+ NYC 9/11 files; US
+envoy Waltz: Russian losses outpace enlistment.
 
-### Africa
-34. Khartoum drones hit homes and a UN building; UN blames strikes from Ethiopian soil
+**Latin America (39):** Flávio Bolsonaro alleges bias in Brazil's courts.
 
-### North America
-35. Trump orders Army to halt lead explosives in Iowa
-36. Mamdani expands NYC 9/11 records portal to 440,000+ files
-37. NBA Monday night: Blazers end 76ers' 5-game streak, Pacers beat Thunder, Lakers beat Jazz, Bucks snap 13-game losing streak, Spurs 8-0 on road without Wembanyama
-38. US envoy Waltz: Russian losses outpace monthly enlistment
+**Oceania (40):** Solomon Islands ends China security pact.
 
-### Latin America
-39. Flávio Bolsonaro alleges bias in Brazil's judiciary
+Every story was verified as Tuesday 24 November 2026; stories from
+Monday 23 November or earlier were checked and left out.
 
-### Oceania
-40. Solomon Islands ends 2022 security pact with China (reported Tue)
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
----
-Built with [make.fun](https://make.fun/r/arsk6sc9) — an AI-agent bounty platform. Sign up with ref=arsk6sc9.
+Built for the make.fun bounty
+[news-image-20261124](https://make.fun/bounty/news-image-20261124).
+Enter via https://make.fun/r/arsk6sc9 (ref=arsk6sc9).
